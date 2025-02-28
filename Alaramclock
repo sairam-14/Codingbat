@@ -1,0 +1,21 @@
+public String alarmClock(int day, boolean vacation) {
+  
+  String alaram1 ="7:00";
+  String alaram2 ="10:00";
+  String  alaram="off";
+  if(vacation){
+    if(day>=1&&day<=5){
+      return alaram2;
+    }else{
+      return alaram;
+    }
+  
+  }else{
+    if(day>=1&&day<=5){
+      
+      return alaram1;
+    }else{
+      return alaram2;
+    }
+  }
+}
