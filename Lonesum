@@ -1,0 +1,18 @@
+public int loneSum(int a, int b, int c) {
+  
+  int sum=0;
+  if(a==b&&b==c&&c==a){
+    return 0;
+  }
+ else if(a==b){
+    return c;
+  }else if(b==c){
+    return a;
+  }else if(c==a){
+    return b;
+  }
+  else{
+    sum=a+b+c;
+    return sum;
+  }
+}
