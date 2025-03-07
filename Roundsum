@@ -1,0 +1,15 @@
+public int roundSum(int a, int b, int c) {
+  
+ 
+        return round10(a) + round10(b) + round10(c);
+    }
+
+    public int round10(int num) {
+        // Round up if the rightmost digit is 5 or greater, otherwise round down
+        if (num % 10 >= 5) {
+            return (num / 10 + 1) * 10;  // Round up
+        } else {
+            return (num / 10) * 10;      // Round down
+        }
+    }
+
