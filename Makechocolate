@@ -1,0 +1,22 @@
+public int makeChocolate(int small, int big, int goal) {
+  
+ int large=0;
+ 
+ if(big<goal/5){
+   large=big;
+ }else{
+   large=goal/5;
+ }
+       int check=goal-(large*5);
+       
+      if(check<small){
+    //  int requiredsmall=Math.abs(check-small);
+          return check;
+          
+      }else if(check==small){
+        
+        return small;
+      }else{
+         return -1;
+      }
+}
