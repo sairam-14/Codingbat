@@ -1,0 +1,12 @@
+public int[] maxEnd3(int[] nums) {
+  
+    for(int i=0;i<=nums.length-1;i++){
+      if(nums[0]>nums[nums.length-1]){
+        nums[i]=nums[0];
+      }else{
+        nums[i]=nums[nums.length-1];
+      }
+    }
+    
+    return nums;
+}
