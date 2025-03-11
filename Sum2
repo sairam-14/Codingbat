@@ -1,0 +1,18 @@
+public int sum2(int[] nums) {
+  
+  int sum=0;
+  if(nums.length>=2){
+    sum=nums[0]+nums[1];
+    
+    return sum;
+   } else if(nums.length<2&&nums.length>0){
+      
+       sum=sum+nums[0];
+        return sum;
+  }else{
+    return 0;
+  }
+  
+ 
+ 
+}
