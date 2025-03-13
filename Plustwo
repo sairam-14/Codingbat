@@ -1,0 +1,16 @@
+public int[] plusTwo(int[] a, int[] b) {
+  
+  int merge[]=new int[a.length+b.length];
+  
+  int j=0;
+  for(int i=0;i<=merge.length-1;i++){
+    
+    if(i<=a.length-1){
+      merge[i]=a[i];
+    }else{
+      merge[i]=b[j];
+      j++;
+    }
+  }
+  return merge;
+}
