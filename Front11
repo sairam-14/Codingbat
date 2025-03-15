@@ -1,0 +1,21 @@
+public int[] front11(int[] a, int[] b) {
+  
+  int c[]=new int[2];
+  
+  if(a.length>0&&b.length>0){
+    c[0]=a[0];
+    c[1]=b[0];
+    return c;
+  }else if(a.length>0){
+    int d[]=new int[1];
+        d[0]=a[0];
+        return d;
+  }else if(b.length>0){
+    int e[]=new int[1];
+    e[0]=b[0];
+    return e;
+  }else{
+    return a;
+  }
+  
+}
