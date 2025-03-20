@@ -1,0 +1,10 @@
+public String[] fizzArray2(int n) {
+  
+  String s[]=new String[n];
+  for(int i=0;i<=s.length-1;i++){
+    
+    s[i]=String.valueOf(i);
+  }
+  
+  return s;
+}
