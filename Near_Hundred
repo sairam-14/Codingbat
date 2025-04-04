@@ -1,0 +1,9 @@
+public boolean nearHundred(int n) {
+  
+  if(100-n<=10&&100-n>=0||200-n<=10&&200-n>=0){
+    return true;
+  }else if(n-100<=10&&n-100>=0||n-200<=10&&n-200>=0){
+    return true;
+  }
+  return false;
+}
