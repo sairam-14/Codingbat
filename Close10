@@ -1,0 +1,17 @@
+public int close10(int a, int b) {
+
+int first=0;
+int second =0;
+if(a>10){
+  first=a-10;
+  second=10-b;
+}else{
+  first=10-a;
+  second=b-10;
+}
+if(first<second){
+  return a;
+}else if(first==second){
+  return 0;
+}
+return b;
